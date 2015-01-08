@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35828CA3-EDD9-4A77-8305-361F81C775A4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\themes\default\images\ajax-loader.gif" />
+    <Content Include="css\themes\default\images\ajax-loader.png" />
+    <Content Include="css\themes\default\images\icons-18-black.png" />
+    <Content Include="css\themes\default\images\icons-18-white.png" />
+    <Content Include="css\themes\default\images\icons-36-black.png" />
+    <Content Include="css\themes\default\images\icons-36-white.png" />
+    <Content Include="css\themes\default\jquery.mobile-1.1.0.css" />
+    <Content Include="css\themes\default\jquery.mobile-1.1.0.min.css" />
+    <Content Include="css\themes\default\jquery.mobile.structure-1.1.0.css" />
+    <Content Include="css\themes\default\jquery.mobile.structure-1.1.0.min.css" />
+    <Content Include="css\themes\default\jquery.mobile.theme-1.1.0.css" />
+    <Content Include="css\themes\default\jquery.mobile.theme-1.1.0.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="docs\about\accessibility.html" />
+    <Content Include="docs\about\features.html" />
+    <Content Include="docs\about\getting-started.html" />
+    <Content Include="docs\about\index.html" />
+    <Content Include="docs\about\intro.html" />
+    <Content Include="docs\about\platforms.html" />
+    <Content Include="docs\api\data-attributes.html" />
+    <Content Include="docs\api\events-nav.html" />
+    <Content Include="docs\api\events.html" />
+    <Content Include="docs\api\globalconfig.html" />
+    <Content Include="docs\api\index.html" />
+    <Content Include="docs\api\mediahelpers.html" />
+    <Content Include="docs\api\methods.html" />
+    <Content Include="docs\api\themes.html" />
+    <Content Include="docs\buttons\api-buttons.html" />
+    <Content Include="docs\buttons\buttons-events.html" />
+    <Content Include="docs\buttons\buttons-grouped.html" />
+    <Content Include="docs\buttons\buttons-icons.html" />
+    <Content Include="docs\buttons\buttons-inline.html" />
+    <Content Include="docs\buttons\buttons-methods.html" />
+    <Content Include="docs\buttons\buttons-options.html" />
+    <Content Include="docs\buttons\buttons-themes.html" />
+    <Content Include="docs\buttons\buttons-types.html" />
+    <Content Include="docs\buttons\index.html" />
+    <Content Include="docs\config\dialogTransition.html" />
+    <Content Include="docs\config\index.html" />
+    <Content Include="docs\config\iOSFullscreen.html" />
+    <Content Include="docs\config\jq17b1.html" />
+    <Content Include="docs\config\loadingMessage.html" />
+    <Content Include="docs\config\loadingMessageTextVisible.html" />
+    <Content Include="docs\config\minScrollBack.html" />
+    <Content Include="docs\config\pageLoadErrorMessage.html" />
+    <Content Include="docs\config\pageTransition.html" />
+    <Content Include="docs\config\pushState.html" />
+    <Content Include="docs\config\touchOverflow.html" />
+    <Content Include="docs\content\api-content.html" />
+    <Content Include="docs\content\content-collapsible-events.html" />
+    <Content Include="docs\content\content-collapsible-methods.html" />
+    <Content Include="docs\content\content-collapsible-options.html" />
+    <Content Include="docs\content\content-collapsible-set-events.html" />
+    <Content Include="docs\content\content-collapsible-set-methods.html" />
+    <Content Include="docs\content\content-collapsible-set-options.html" />
+    <Content Include="docs\content\content-collapsible-set.html" />
+    <Content Include="docs\content\content-collapsible.html" />
+    <Content Include="docs\content\content-grids.html" />
+    <Content Include="docs\content\content-html.html" />
+    <Content Include="docs\content\content-themes.html" />
+    <Content Include="docs\content\index.html" />
+    <Content Include="docs\forms\checkboxes\events.html" />
+    <Content Include="docs\forms\checkboxes\index.html" />
+    <Content Include="docs\forms\checkboxes\methods.html" />
+    <Content Include="docs\forms\checkboxes\options.html" />
+    <Content Include="docs\forms\docs-forms.html" />
+    <Content Include="docs\forms\forms-all-compare.html" />
+    <Content Include="docs\forms\forms-all-mini.html" />
+    <Content Include="docs\forms\forms-all-native.html" />
+    <Content Include="docs\forms\forms-all.html" />
+    <Content Include="docs\forms\forms-sample.html" />
+    <Content Include="docs\forms\forms-themes.html" />
+    <Content Include="docs\forms\index.html" />
+    <Content Include="docs\forms\plugin-eventsmethods.html" />
+    <Content Include="docs\forms\radiobuttons\events.html" />
+    <Content Include="docs\forms\radiobuttons\index.html" />
+    <Content Include="docs\forms\radiobuttons\methods.html" />
+    <Content Include="docs\forms\radiobuttons\options.html" />
+    <Content Include="docs\forms\search\events.html" />
+    <Content Include="docs\forms\search\index.html" />
+    <Content Include="docs\forms\search\methods.html" />
+    <Content Include="docs\forms\search\options.html" />
+    <Content Include="docs\forms\selects\custom.html" />
+    <Content Include="docs\forms\selects\events.html" />
+    <Content Include="docs\forms\selects\index.html" />
+    <Content Include="docs\forms\selects\methods.html" />
+    <Content Include="docs\forms\selects\options.html" />
+    <Content Include="docs\forms\slider\events.html" />
+    <Content Include="docs\forms\slider\index.html" />
+    <Content Include="docs\forms\slider\methods.html" />
+    <Content Include="docs\forms\slider\options.html" />
+    <Content Include="docs\forms\switch\events.html" />
+    <Content Include="docs\forms\switch\index.html" />
+    <Content Include="docs\forms\switch\methods.html" />
+    <Content Include="docs\forms\switch\options.html" />
+    <Content Include="docs\forms\textinputs\events.html" />
+    <Content Include="docs\forms\textinputs\index.html" />
+    <Content Include="docs\forms\textinputs\methods.html" />
+    <Content Include="docs\forms\textinputs\options.html" />
+    <Content Include="docs\index.html" />
+    <Content Include="docs\lists\docs-lists.html" />
+    <Content Include="docs\lists\images\album-af.jpg" />
+    <Content Include="docs\lists\images\album-ag.jpg" />
+    <Content Include="docs\lists\images\album-bb.jpg" />
+    <Content Include="docs\lists\images\album-bk.jpg" />
+    <Content Include="docs\lists\images\album-hc.jpg" />
+    <Content Include="docs\lists\images\album-k.jpg" />
+    <Content Include="docs\lists\images\album-mg.jpg" />
+    <Content Include="docs\lists\images\album-ok.jpg" />
+    <Content Include="docs\lists\images\album-p.jpg" />
+    <Content Include="docs\lists\images\album-rh.jpg" />
+    <Content Include="docs\lists\images\album-ws.jpg" />
+    <Content Include="docs\lists\images\album-xx.jpg" />
+    <Content Include="docs\lists\images\de.png" />
+    <Content Include="docs\lists\images\fi.png" />
+    <Content Include="docs\lists\images\gb.png" />
+    <Content Include="docs\lists\images\gf.png" />
+    <Content Include="docs\lists\images\sj.png" />
+    <Content Include="docs\lists\images\us.png" />
+    <Content Include="docs\lists\index.html" />
+    <Content Include="docs\lists\lists-all-full.html" />
+    <Content Include="docs\lists\lists-count.html" />
+    <Content Include="docs\lists\lists-divider.html" />
+    <Content Include="docs\lists\lists-events.html" />
+    <Content Include="docs\lists\lists-formatting.html" />
+    <Content Include="docs\lists\lists-forms-inset.html" />
+    <Content Include="docs\lists\lists-forms.html" />
+    <Content Include="docs\lists\lists-icons.html" />
+    <Content Include="docs\lists\lists-inset.html" />
+    <Content Include="docs\lists\lists-methods.html" />
+    <Content Include="docs\lists\lists-nested.html" />
+    <Content Include="docs\lists\lists-ol.html" />
+    <Content Include="docs\lists\lists-options.html" />
+    <Content Include="docs\lists\lists-performance.html" />
+    <Content Include="docs\lists\lists-readonly-inset.html" />
+    <Content Include="docs\lists\lists-readonly.html" />
+    <Content Include="docs\lists\lists-search-filtertext.html" />
+    <Content Include="docs\lists\lists-search-inset.html" />
+    <Content Include="docs\lists\lists-search-with-dividers.html" />
+    <Content Include="docs\lists\lists-search.html" />
+    <Content Include="docs\lists\lists-split-purchase.html" />
+    <Content Include="docs\lists\lists-split.html" />
+    <Content Include="docs\lists\lists-themes.html" />
+    <Content Include="docs\lists\lists-thumbnails.html" />
+    <Content Include="docs\lists\lists-ul.html" />
+    <Content Include="docs\nav.html" />
+    <Content Include="docs\pages\dialog-alt.html" />
+    <Content Include="docs\pages\dialog-buttons.html" />
+    <Content Include="docs\pages\dialog-overlay.html" />
+    <Content Include="docs\pages\dialog-success.html" />
+    <Content Include="docs\pages\dialog-with-select.html" />
+    <Content Include="docs\pages\dialog.html" />
+    <Content Include="docs\pages\docs-links-urltest\index.html" />
+    <Content Include="docs\pages\dynamic-samples\animals.html" />
+    <Content Include="docs\pages\dynamic-samples\colors.html" />
+    <Content Include="docs\pages\dynamic-samples\index.html" />
+    <Content Include="docs\pages\dynamic-samples\sample-reuse-page-external.html" />
+    <Content Include="docs\pages\dynamic-samples\sample-reuse-page.html" />
+    <Content Include="docs\pages\dynamic-samples\vehicles.html" />
+    <Content Include="docs\pages\index.html" />
+    <Content Include="docs\pages\multipage-template.html" />
+    <Content Include="docs\pages\page-anatomy.html" />
+    <Content Include="docs\pages\page-cache.html" />
+    <Content Include="docs\pages\page-customtransitions.html" />
+    <Content Include="docs\pages\page-dialogs.html" />
+    <Content Include="docs\pages\page-dynamic.html" />
+    <Content Include="docs\pages\page-links.html" />
+    <Content Include="docs\pages\page-navmodel.html" />
+    <Content Include="docs\pages\page-scripting.html" />
+    <Content Include="docs\pages\page-template.html" />
+    <Content Include="docs\pages\page-titles.html" />
+    <Content Include="docs\pages\page-transitions-dialog.html" />
+    <Content Include="docs\pages\page-transitions-page.html" />
+    <Content Include="docs\pages\page-transitions.html" />
+    <Content Include="docs\pages\pages-themes.html" />
+    <Content Include="docs\pages\pages-themes\theme-a.html" />
+    <Content Include="docs\pages\pages-themes\theme-b.html" />
+    <Content Include="docs\pages\pages-themes\theme-c.html" />
+    <Content Include="docs\pages\pages-themes\theme-d.html" />
+    <Content Include="docs\pages\pages-themes\theme-e.html" />
+    <Content Include="docs\pages\phonegap.html" />
+    <Content Include="docs\pages\touchoverflow.html" />
+    <Content Include="docs\pages\transition-success.html" />
+    <Content Include="docs\toolbars\bars-fixed-events.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms-a.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms-b.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms-c.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms-d.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms-e.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms-f.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms-g.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms-h.html" />
+    <Content Include="docs\toolbars\bars-fixed-forms.html" />
+    <Content Include="docs\toolbars\bars-fixed-methods.html" />
+    <Content Include="docs\toolbars\bars-fixed-options.html" />
+    <Content Include="docs\toolbars\bars-fixed.html" />
+    <Content Include="docs\toolbars\bars-fullscreen.html" />
+    <Content Include="docs\toolbars\bars-themes.html" />
+    <Content Include="docs\toolbars\docs-bars.html" />
+    <Content Include="docs\toolbars\docs-footers.html" />
+    <Content Include="docs\toolbars\docs-headers.html" />
+    <Content Include="docs\toolbars\docs-navbar.html" />
+    <Content Include="docs\toolbars\footer-persist-a.html" />
+    <Content Include="docs\toolbars\footer-persist-b.html" />
+    <Content Include="docs\toolbars\footer-persist-c.html" />
+    <Content Include="docs\toolbars\footer-persist-d.html" />
+    <Content Include="docs\toolbars\glyphish-icons\09-chat2.png" />
+    <Content Include="docs\toolbars\glyphish-icons\100-coffee.png" />
+    <Content Include="docs\toolbars\glyphish-icons\18-envelope.png" />
+    <Content Include="docs\toolbars\glyphish-icons\19-gear.png" />
+    <Content Include="docs\toolbars\glyphish-icons\21-skull.png" />
+    <Content Include="docs\toolbars\glyphish-icons\30-key.png" />
+    <Content Include="docs\toolbars\glyphish-icons\34-coffee.png" />
+    <Content Include="docs\toolbars\glyphish-icons\88-beermug.png" />
+    <Content Include="docs\toolbars\glyphish-icons\Read me first - license.txt" />
+    <Content Include="docs\toolbars\images\photo-run.jpeg" />
+    <Content Include="docs\toolbars\index.html" />
+    <Content Include="docs\_assets\css\jqm-docs.css" />
+    <Content Include="docs\_assets\images\ios_icon.png" />
+    <Content Include="docs\_assets\images\ios_startup.png" />
+    <Content Include="docs\_assets\images\jqm-sitebg.png" />
+    <Content Include="docs\_assets\images\jquery-logo.png" />
+    <Content Include="docs\_assets\images\mobile-devices.png" />
+    <Content Include="docs\_assets\images\px-ccc.gif" />
+    <Content Include="docs\_assets\images\themroller-mobile-logo.png" />
+    <Content Include="docs\_assets\images\version.png" />
+    <Content Include="docs\_assets\js\jqm-docs.js" />
+    <Content Include="docs\_assets\js\_viewsource.js" />
+    <Content Include="jquery.mobile-1.1.0.css" />
+    <Content Include="jquery.mobile-1.1.0.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.mobile-1.1.0.js" />
+    <Content Include="js\jquery.mobile-1.1.0.min.js" />
+    <None Include="Properties\PublishProfiles\Host.pubxml" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference2\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="show.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert.cs" />
+    <Compile Include="BaseClass.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="show.aspx.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="show.aspx.designer.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\forms\forms-sample-response.php" />
+    <None Include="docs\forms\forms-sample-selfsubmit.php" />
+    <None Include="docs\pages\dynamic-samples\category.php" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\Arrays.xsd" />
+    <None Include="Service References\ServiceReference1\Message.xsd" />
+    <None Include="Service References\ServiceReference1\service.wsdl" />
+    <None Include="Service References\ServiceReference1\service.xsd" />
+    <None Include="Service References\ServiceReference1\service1.xsd" />
+    <None Include="Service References\ServiceReference1\service2.xsd" />
+    <None Include="Service References\ServiceReference1\System.Data.xsd" />
+    <None Include="Service References\ServiceReference2\DataService.xsd" />
+    <None Include="Service References\ServiceReference2\DataService1.xsd" />
+    <None Include="Service References\ServiceReference2\DataService2.xsd" />
+    <None Include="Service References\ServiceReference2\Services.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57847</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

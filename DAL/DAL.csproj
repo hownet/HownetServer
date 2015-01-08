@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FE00521-3A8B-42B1-814E-585E99407B2E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Hownet.DAL</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Hownet.DAL</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LTP.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LTP.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.1.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Name>Model</Name>
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessList.cs" />
+    <Compile Include="Accounts.cs" />
+    <Compile Include="AllLineRemark.cs" />
+    <Compile Include="AllRemark.cs" />
+    <Compile Include="AmountInfo.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttendanceRecords.cs" />
+    <Compile Include="AttendanceSum.cs" />
+    <Compile Include="Attribute.cs" />
+    <Compile Include="BaseFile\BaseFileClass.cs" />
+    <Compile Include="BaseFile\MakeBox.cs" />
+    <Compile Include="BaseFile\RunProcedure.cs" />
+    <Compile Include="BAS_BodyPart.cs" />
+    <Compile Include="BAS_BodyPart_The.cs" />
+    <Compile Include="BAS_Container.cs" />
+    <Compile Include="BAS_Country.cs" />
+    <Compile Include="BAS_Currency.cs" />
+    <Compile Include="BAS_CustomerOrigin.cs" />
+    <Compile Include="BAS_CustomerStatus.cs" />
+    <Compile Include="BAS_Customer_ContactStatus.cs" />
+    <Compile Include="BAS_ExchangeRate.cs" />
+    <Compile Include="BAS_ExpContractTerm.cs" />
+    <Compile Include="BAS_ExpressType.cs" />
+    <Compile Include="BAS_FlowUpStatus.cs" />
+    <Compile Include="Bas_KJKM.cs" />
+    <Compile Include="Bas_LBXM.cs" />
+    <Compile Include="BAS_NowState.cs" />
+    <Compile Include="BAS_PackUnit.cs" />
+    <Compile Include="BAS_PaymentType.cs" />
+    <Compile Include="BAS_Port.cs" />
+    <Compile Include="BAS_PriceTerm.cs" />
+    <Compile Include="BAS_PurContractTerm.cs" />
+    <Compile Include="BAS_QtyUnit.cs" />
+    <Compile Include="BAS_Region.cs" />
+    <Compile Include="Bas_Sample_Process.cs" />
+    <Compile Include="Bas_TestingManager.cs" />
+    <Compile Include="Bas_TestingScheme.cs" />
+    <Compile Include="BAS_TradeType.cs" />
+    <Compile Include="BAS_TransMode.cs" />
+    <Compile Include="BAS_WeightUnit.cs" />
+    <Compile Include="BatchNumber.cs" />
+    <Compile Include="BrandList.cs" />
+    <Compile Include="CaicDayMoney.cs" />
+    <Compile Include="CaiPian.cs" />
+    <Compile Include="CardReaderList.cs" />
+    <Compile Include="ChinaZone.cs" />
+    <Compile Include="ClothAmount.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="CompanyLog.cs" />
+    <Compile Include="CustomerManagement.cs" />
+    <Compile Include="CW_KJFL.cs" />
+    <Compile Include="CW_KJFLInfo.cs" />
+    <Compile Include="DayWorking.cs" />
+    <Compile Include="DayWorkingInfo.cs" />
+    <Compile Include="Deparment.cs" />
+    <Compile Include="DepartmentDemand.cs" />
+    <Compile Include="DepartmentJobs.cs" />
+    <Compile Include="DepartmentTaskMain.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EXP_DevelopSampleSupplyType.cs" />
+    <Compile Include="FinanceSet.cs" />
+    <Compile Include="FixedAssets.cs" />
+    <Compile Include="FixedAssetsGroup.cs" />
+    <Compile Include="FixedAssetsOut.cs" />
+    <Compile Include="FromCloumns.cs" />
+    <Compile Include="FromCloumnsMain.cs" />
+    <Compile Include="HadnBackPrice.cs" />
+    <Compile Include="HandBackInfo.cs" />
+    <Compile Include="HandBackMain.cs" />
+    <Compile Include="Holidays.cs" />
+    <Compile Include="HolidaysMain.cs" />
+    <Compile Include="ImageList.cs" />
+    <Compile Include="Items.cs" />
+    <Compile Include="ItemsText.cs" />
+    <Compile Include="KQ_GuiZeSet.cs" />
+    <Compile Include="KQ_MacSet.cs" />
+    <Compile Include="KQ_UserInfo.cs" />
+    <Compile Include="KQ_UserInfoList.cs" />
+    <Compile Include="KQ_UserLogList.cs" />
+    <Compile Include="Materiel.cs" />
+    <Compile Include="MaterielCaiPian.cs" />
+    <Compile Include="MaterielCompany.cs" />
+    <Compile Include="MaterielDemand.cs" />
+    <Compile Include="MaterielInOrOut.cs" />
+    <Compile Include="MaterielList.cs" />
+    <Compile Include="MaterielStructInfo.cs" />
+    <Compile Include="MaterielStructMain.cs" />
+    <Compile Include="MaterielType.cs" />
+    <Compile Include="Measure.cs" />
+    <Compile Include="Mesg.cs" />
+    <Compile Include="MesgAnnex.cs" />
+    <Compile Include="MesgInfo.cs" />
+    <Compile Include="MiniEmp.cs" />
+    <Compile Include="MoneyInOrOut.cs" />
+    <Compile Include="MoneyList.cs" />
+    <Compile Include="NumPrefix.cs" />
+    <Compile Include="OrderingList.cs" />
+    <Compile Include="OtherType.cs" />
+    <Compile Include="Pack2DepotInfo.cs" />
+    <Compile Include="Pack2DepotMain.cs" />
+    <Compile Include="PackAmount.cs" />
+    <Compile Include="PackingMethod.cs" />
+    <Compile Include="Pay.cs" />
+    <Compile Include="PayColumnsSet.cs" />
+    <Compile Include="PayCosts.cs" />
+    <Compile Include="PayCostsInfo.cs" />
+    <Compile Include="PayInfo.cs" />
+    <Compile Include="PayMain.cs" />
+    <Compile Include="PayNew.cs" />
+    <Compile Include="PaySum.cs" />
+    <Compile Include="PermissionsJobs.cs" />
+    <Compile Include="PermissionsProperty.cs" />
+    <Compile Include="PermissionsUser.cs" />
+    <Compile Include="PlanUseRep.cs" />
+    <Compile Include="ProduceSell.cs" />
+    <Compile Include="ProduceSellInfo.cs" />
+    <Compile Include="ProduceSellOne.cs" />
+    <Compile Include="ProduceTaskPhoto.cs" />
+    <Compile Include="Product2Depot.cs" />
+    <Compile Include="Product2DepotInfo.cs" />
+    <Compile Include="ProductionPlan.cs" />
+    <Compile Include="ProductTaskMain.cs" />
+    <Compile Include="ProductWorkingInfo.cs" />
+    <Compile Include="ProductWorkingMain.cs" />
+    <Compile Include="QuotePrice.cs" />
+    <Compile Include="Remark.cs" />
+    <Compile Include="Repertory.cs" />
+    <Compile Include="RepertoryList.cs" />
+    <Compile Include="SalesOrderInfoList.cs" />
+    <Compile Include="SalesOrderMain.cs" />
+    <Compile Include="SalesPrice.cs" />
+    <Compile Include="Sample.cs" />
+    <Compile Include="SampleColorAmount.cs" />
+    <Compile Include="SampleMain.cs" />
+    <Compile Include="SampleMateriel.cs" />
+    <Compile Include="SampleMaterielList.cs" />
+    <Compile Include="SamplesAmount.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="SizeBow.cs" />
+    <Compile Include="SizePart.cs" />
+    <Compile Include="SizeTable.cs" />
+    <Compile Include="SizeTableInfo.cs" />
+    <Compile Include="SizeTableTask.cs" />
+    <Compile Include="Specification.cs" />
+    <Compile Include="StockBack.cs" />
+    <Compile Include="StockBackInfo.cs" />
+    <Compile Include="StockBackInfoList.cs" />
+    <Compile Include="StockMaterielDemand.cs" />
+    <Compile Include="SumReoprtMain.cs" />
+    <Compile Include="SumReportInfo.cs" />
+    <Compile Include="SysFormula.cs" />
+    <Compile Include="SysTem.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="VouchersInfo.cs" />
+    <Compile Include="VouchersMain.cs" />
+    <Compile Include="WMSInventoryInfo.cs" />
+    <Compile Include="Working.cs" />
+    <Compile Include="WorkTicket.cs" />
+    <Compile Include="WorkTicketIDBack.cs" />
+    <Compile Include="WorkTicketIDCard.cs" />
+    <Compile Include="WorkTicketInfo.cs" />
+    <Compile Include="WorkType.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
